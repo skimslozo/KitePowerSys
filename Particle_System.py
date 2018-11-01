@@ -122,7 +122,7 @@ class ParticleSystem:
 screen=disp()
 screen.create()
 screen.window.select()
-ps=ParticleSystem(10, 0.25, (1/5.)*screen.scrw, (2/5.)*screen.scrh, z_last=0)
+ps=ParticleSystem(nparticles=10, mass=0.25, x_last=(1/5.)*screen.scrw, y_last=(2/5.)*screen.scrh, z_last=0)
 ps.incl_final=False
 ps.start_sim()
 
